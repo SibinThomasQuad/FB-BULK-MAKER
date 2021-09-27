@@ -20,8 +20,16 @@ def create_account(first_name,last_name,email,day,month,year,password,sex):
     data = "jazoest=21006&lsd=AVqcTg9Tcaw&firstname="+first_name+"&lastname="+last_name+"&reg_email__="+email+"&reg_email_confirmation__=&reg_passwd__="+password+"&birthday_day="+day+"&birthday_month="+month+"&birthday_year="+year+"&birthday_age=&did_use_age=false&sex="+sex+"&preferred_pronoun=&custom_gender=&referrer=&asked_to_login=0&use_custom_gender=&terms=on&ns=0&ri=f573b07d-58a7-4c05-991a-2842823fa461&action_dialog_shown=&ignore=captcha%7Creg_email_confirmation__&locale=ml_IN&reg_instance=U405YZOWKUpJ3pU_SI_XLeFl&captcha_persist_data=AZmmgDXYezKHhijCrzaVvqYUnTYI7WRzmAhhj1P7TFaeisNZutCK3FmK9z770efuQGVmtTNkUpWhVyd5KTXekankAKT9ptT1hp6FV5bXb_VDD_7U0BchdSjSD0O2c37XQ26JcQ5X6qqlc18SyUm5eey4ijMHrC1hBM1PWM_0OaezCnvP8z_nxFKAcGD-kUatoZLBI7MQtEOBWj2HB0ZPABd0e34rpqUTzbD7q0zkQSk3b3LwrNhmJ4WfXu_pp3HV4nTc7W7sSxr_QOEnSW1OIQXKYNBB0OuLf49r8onePQFEV1EzLEjbgO4U4baBkCKt0sopJ7crcPa7pZ0JhpmkApHiDRaP1hXFyakSbs6OYlfAUiRp2TuKzkz43waH91MbY0I&captcha_response=&__user=0&__a=1&__dyn=7xe6FomK36Q5E5ObwBy9uC1swgE98nwgU6C7UW3q327E2vwXx60kO4o3Bw5VCwjE3awbG782Cw8G1nzUO0n2US1vw5zwwwi81nE2YxW0D83mwaS0zE5W08HwSyE158&__csr=&__req=b&__hs=18897.PHASED%3ADEFAULT.2.0.0.0.&dpr=1&__ccg=GOOD&__rev=1004457543&__s=c2m3vk%3Ayiqb2i%3A0ef1y9&__hsi=7012488637629718969-0&__comet_req=0&__spin_r=1004457543&__spin_b=trunk&__spin_t=1632722243"
     resp = requests.post(url, headers=headers, data=data)
     return resp.status_code
+def details():
+    #line
+    f = open("label.txt", "r")
+    print('\n')
+    print(f.read())
+    print('\n')
+    print("Developed BY-SIBIN THOM4S\n")
 def main():
     #line
+    details()
     file1 = open('data.txt', 'r')
     count = 0
     while True:
